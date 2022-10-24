@@ -1,4 +1,4 @@
-<p align="middle" >
+d<p align="middle" >
   <img width="200px;" src="https://github.com/woowacourse/javascript-baseball-precourse/blob/main/images/baseball_icon.png?raw=true"/>
 </p>
 <h1 align="middle">숫자 야구 게임</h1>
@@ -149,8 +149,7 @@ npm run test
   - [이벤트 위임](https://ko.javascript.info/event-delegation)
 
 -----------------------------------------------------------------------------------------------------------
-## 최근 업데이트 : 22.10.24 20:08 
-## 작성자 : 김동우
+## 작성자 : 김동우(DongWooKim97)
 
 ### ✔️ 구현 기능 목록
 - 1️⃣ index.js 생성 후 함수형 프로그래밍을 통해 시작함수 생성.
@@ -184,5 +183,9 @@ export default function BaseballGame() {
     ```
     해당 결과를 저장 후 보여주는 방식 사용.
   
-  
-    
+- 5️⃣ 정답과 실패의 경우 생성
+  - Ex) '3스트라이크' -> 정답! / '0볼 0스트라이크' -> 낫싱
+  - ```javascript
+    <div id="result"></div>  
+    ```
+    이 곳의 값을 변경하도록 수정

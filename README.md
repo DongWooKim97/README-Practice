@@ -150,7 +150,7 @@ npm run test
 
 -----------------------------------------------------------------------------------------------------------
 ### ✔️ 구현 기능 목록
-- 1️⃣ index.js 생성 후 함수형 프로그래밍을 통해 시작함수 생성
+- 1️⃣ index.js 생성 후 함수형 프로그래밍을 통해 시작함수 생성.
 ```javascript
 export default function BaseballGame() {
   this.play = function (computerInputNumbers, userInputNumbers) {
@@ -159,3 +159,12 @@ export default function BaseballGame() {
 }
 ```
 - 2️⃣ 컴퓨터(PC)의 랜덤 숫자 생성 함수 생성
+  - from @woowacourse,  'MissionUtils.pickNumberInRange(minNum, maxNum)
+    pickNumberInRange의 매개변수로 주이전 값 사이에서 하나의 숫자를 반환.
+  - 위에서 만든 숫자를 
+    ```javascript
+      const computerInputArray = new Set()
+      ``` 
+    객체에 담아 중복되는 값을 사전에 방지.
+
+- 3️⃣ 게임을 진행하기 위한 사용자의 입력 값을 확인하는 기능 생성.

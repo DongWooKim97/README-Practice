@@ -199,4 +199,10 @@ export default function BaseballGame() {
     - 4) 3자리의 숫자 확인  
       - 1) 3자리의 숫자만 ⭕
       - 2) 1~2자리나 4자리 이상 ❌
-  
+
+- 7️⃣ 잘못된 값을 유저가 입력했을 시, 
+  ```javascript
+  alert()
+  ```
+  에러 메시지를 포함하고, 재입력 할 수 있도록 유도.
+  - Validation하는 과정에서 모듈화하여 진행

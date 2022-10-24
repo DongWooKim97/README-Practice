@@ -1,9 +1,13 @@
+import getComputerInput from "./input/getComputerInput.js";
+
 export default function BaseballGame() {
+  const computerInputNumbers = getComputerInput();
+
   this.play = function (computerInputNumbers, userInputNumbers) {
     return "결과 값 String";
-  };
+  };    
 
-  console.log('게임 시작 함수 생성')
+
 
 }
 

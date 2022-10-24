@@ -8,7 +8,6 @@ export default function getComputerInput(){
   while([...computerNumberArray].length < 3) {
     computerNumberArray.add(MissionUtils.Random.pickNumberInRange(minNum,maxNum));
   }
-  console.log([...computerNumberArray]);
   return Number([...computerNumberArray].join(''))
 
 }

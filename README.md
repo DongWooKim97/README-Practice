@@ -157,5 +157,5 @@ export default function BaseballGame() {
     return "결과 값 String";
   };
 }
-
+```
 - 2️⃣ 컴퓨터(PC)의 랜덤 숫자 생성 함수 생성

@@ -1,12 +1,14 @@
+import inputErrorAlert from "../input/inputErrorAlert.js";
+
 function correctWord(userInputNumbers){
   if(userInputNumbers.length !== 3) {
-    return false;
+    return inputErrorAlert('lengthError');
   }
   if(!Number.isInteger(+userInputNumbers)) {
-    return false;
+    return inputErrorAlert('inputTypeError');
   }
   if(userInputNumbers.length !== [...new Set(userInputNumbers)].length) {
-    return false;
+    return inputErrorAlert('duplicateError');
   }
   return true
 }

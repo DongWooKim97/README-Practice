@@ -147,3 +147,13 @@ npm run test
 - event
   - [이벤트](https://ko.javascript.info/introduction-browser-events)
   - [이벤트 위임](https://ko.javascript.info/event-delegation)
+
+-----------------------------------------------------------------------------------------------------------
+### ✔️ 구현 기능 목록
+- 1️⃣ index.js 생성 후 함수형 프로그래밍을 통해 시작함수 생성
+```javascript
+export default function BaseballGame() {
+  this.play = function (computerInputNumbers, userInputNumbers) {
+    return "결과 값 String";
+  };
+}

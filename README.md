@@ -1,4 +1,4 @@
-d<p align="middle" >
+buttond<p align="middle" >
   <img width="200px;" src="https://github.com/woowacourse/javascript-baseball-precourse/blob/main/images/baseball_icon.png?raw=true"/>
 </p>
 <h1 align="middle">숫자 야구 게임</h1>
@@ -206,3 +206,16 @@ export default function BaseballGame() {
   ```
   에러 메시지를 포함하고, 재입력 할 수 있도록 유도.
   - Validation하는 과정에서 모듈화하여 진행
+
+- 8️⃣ 정답을 맞췄을 시, 재시작하는 기능 생성.
+  - ```javascript
+    <div id="result"></div>  
+    ```
+  
+  - 정답일 경우에는
+  ```javascript
+      <div id="result">
+          <button id="game-restart-button>재시작</button>
+      </div>
+  ```
+  으로  만들어 재시작 하게끔 유도.

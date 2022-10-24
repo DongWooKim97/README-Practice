@@ -179,4 +179,7 @@ export default function BaseballGame() {
   - 입력받은 유저의 숫자와 만들어진 컴퓨터 숫자의 비교
     - ❓ 그럼 버튼을 클릭한 시점 후에, 두 숫자를 비교해야 하나요? 
     - ❗ 그렇습니다. 그렇기에 기존에 생성한 checkUserInput함수를 변경 후 사용.
+  - <div id="result"></div> 에 해당 결과를 저장 후 보여주는 방식 사용.
+  
+  
     

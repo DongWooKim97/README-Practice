@@ -171,3 +171,6 @@ export default function BaseballGame() {
     객체에 담아 중복되는 값을 사전에 방지.
 
 - 3️⃣ 게임을 진행하기 위한 사용자의 입력 값을 확인하는 기능 생성.
+  - 값을 확인하기 위해선, <button id="submit">확인</button>    에 EventListener를 추가.
+    - EventListener를 추가하기 위한 새로운 함수 생성.
+    - 이 함수를 모듈화하여 재사용성을 증대.

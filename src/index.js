@@ -6,7 +6,9 @@ export default function BaseballGame() {
   const computerInputNumbers = getComputerInput();
   const submit = document.getElementById('submit')
 
-  submit.addEventListener('click',checkUserInput)
+  console.log(computerInputNumbers);
+  // for score
+  checkUserInput(computerInputNumbers)
 
   this.play = function (computerInputNumbers, userInputNumbers) {
     return "결과 값 String";

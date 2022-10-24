@@ -1,5 +1,11 @@
-export default function checkUserInput(){
-  const userInputNumbers = document.getElementById('user-input').value;
+import getScore from "./getScore.js"
 
-  document.getElementById('result').innerHTML = userInputNumbers;
+export default function checkUserInput(computerInputNumbers){
+  
+  submit.addEventListener('click', () => {
+    const userInputNumbers = document.getElementById('user-input').value;
+    document.getElementById('result').innerHTML = userInputNumbers;
+
+    console.log( getScore(computerInputNumbers, userInputNumbers))
+  })
 }

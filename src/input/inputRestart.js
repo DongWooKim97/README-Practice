@@ -1,20 +1,20 @@
-export default function inputRestart(resultDomain, resultString) {
-  if(resultString === '정답') {
-    printCorrectAnswer(resultDomain);
+export default function inputRestart(gameResult) {
+  const $result = document.querySelector('#result')
+  if(gameResult === '정답') {
+    printCorrectAnswer($result);
     return true;
   }
-  printInCorrectAnswer(resultDomain, resultString);
+  printInCorrectAnswer($result, gameResult);
   return false;
 }
 
-function printCorrectAnswer(resultDomain) {
-  resultDomain.innerHTML = `<div>
+function printCorrectAnswer($result) {
+  $result.innerHTML = `<div>
                               <strong>🎉정답입니다🎉</strong>
                               <button id="game-restart-button">게임 재시작</button>
                             </div>`
-
 }
-function printInCorrectAnswer(resultDomain, resultString) {
-  resultDomain.innerHTML = resultString
+function printInCorrectAnswer($result, gameResult) {
+  $result.innerHTML = gameResult;
 
 }

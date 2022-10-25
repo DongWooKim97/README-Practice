@@ -219,3 +219,11 @@ export default function BaseballGame() {
       </div>
   ```
   으로  만들어 재시작 하게끔 유도.
+
+- 9️⃣ 재시작 버튼 클릭시, 아래 태그의 내용 삭제 후 재입력 유도.
+```javascript
+  <div id="result"></div>
+  <input type="text" id="user-input">
+```
+
+

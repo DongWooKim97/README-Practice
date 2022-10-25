@@ -1,4 +1,4 @@
-<p align="middle" >
+buttond<p align="middle" >
   <img width="200px;" src="https://github.com/woowacourse/javascript-baseball-precourse/blob/main/images/baseball_icon.png?raw=true"/>
 </p>
 <h1 align="middle">숫자 야구 게임</h1>
@@ -147,3 +147,75 @@ npm run test
 - event
   - [이벤트](https://ko.javascript.info/introduction-browser-events)
   - [이벤트 위임](https://ko.javascript.info/event-delegation)
+
+-----------------------------------------------------------------------------------------------------------
+## 작성자 : 김동우(DongWooKim97)
+
+### ✔️ 구현 기능 목록
+- 1️⃣ index.js 생성 후 함수형 프로그래밍을 통해 시작함수 생성.
+```javascript
+export default function BaseballGame() {
+  this.play = function (computerInputNumbers, userInputNumbers) {
+    return "결과 값 String";
+  };
+}
+```
+- 2️⃣ 컴퓨터(PC)의 랜덤 숫자 생성 함수 생성
+  - from @woowacourse,  'MissionUtils.pickNumberInRange(minNum, maxNum)
+    pickNumberInRange의 매개변수로 주이전 값 사이에서 하나의 숫자를 반환.
+  - 위에서 만든 숫자를 
+    ```javascript
+      const computerInputArray = new Set()
+    ``` 
+    객체에 담아 중복되는 값을 사전에 방지.
+
+- 3️⃣ 게임을 진행하기 위한 사용자의 입력 값을 확인하는 기능 생성.
+  - 값을 확인하기 위해선, <button id="submit">확인</button>    에 EventListener를 추가.
+    - EventListener를 추가하기 위한 새로운 함수 생성.
+    - 이 함수를 모듈화하여 재사용성을 증대.
+
+- 4️⃣ 볼/ 스트라이크 판정 시스템 생성
+  - 입력받은 유저의 숫자와 만들어진 컴퓨터 숫자의 비교
+    - ❓ 그럼 버튼을 클릭한 시점 후에, 두 숫자를 비교해야 하나요? 
+    - ❗ 그렇습니다. 그렇기에 기존에 생성한 checkUserInput함수를 변경 후 사용.
+  - ```javascript
+    <div id="result"></div>
+    ```
+    해당 결과를 저장 후 보여주는 방식 사용.
+  
+- 5️⃣ 정답과 실패의 경우 생성
+  - Ex) '3스트라이크' -> 정답! / '0볼 0스트라이크' -> 낫싱
+  - ```javascript
+    <div id="result"></div>  
+    ```
+    이 곳의 값을 변경하도록 수정
+
+- 6️⃣ 입력받은 유저의 입력값이 조건에 부합하는지 체크하는 Validation 기능 생성
+  - <button>확인</button>을 누른 시점에서 확인해야 하기에,</br>
+  EventListener 객체 속에서 체크 한 후 판정 시스템 돌입.
+    - 1) 중복 숫자 ❓
+    - 2) 글자 확인 ❓
+    - 3) 빈칸 확인 ❓
+    - 4) 3자리의 숫자 확인  
+      - 1) 3자리의 숫자만 ⭕
+      - 2) 1~2자리나 4자리 이상 ❌
+
+- 7️⃣ 잘못된 값을 유저가 입력했을 시, 
+  ```javascript
+  alert()
+  ```
+  에러 메시지를 포함하고, 재입력 할 수 있도록 유도.
+  - Validation하는 과정에서 모듈화하여 진행
+
+- 8️⃣ 정답을 맞췄을 시, 재시작하는 기능 생성.
+  - ```javascript
+    <div id="result"></div>  
+    ```
+  
+  - 정답일 경우에는
+  ```javascript
+      <div id="result">
+          <button id="game-restart-button>재시작</button>
+      </div>
+  ```
+  으로  만들어 재시작 하게끔 유도.

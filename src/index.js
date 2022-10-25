@@ -4,8 +4,8 @@ import checkUserInput from "./play/checkUserInput.js";
 
 export default function BaseballGame() {
   const computerInputNumbers = getComputerInput();
-  const submit = document.getElementById('submit')
-
+  // const submit = document.getElementById('submit')
+  console.log(computerInputNumbers);
   // for score
   checkUserInput(computerInputNumbers)
 
